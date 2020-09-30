@@ -8,6 +8,9 @@
     "build": "webpack --config webpack.client.js --mode production",
     "dev": "webpack --config webpack.client.js --mode development"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "author": "Alexander Ismailov",
   "license": "ISC",
   "devDependencies": {
