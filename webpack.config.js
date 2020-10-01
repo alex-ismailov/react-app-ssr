@@ -24,9 +24,11 @@ module.exports = (env) => {
         {
           loader: "stylus-loader",
           options: {
-            import: [ // Тут для Stylus'а можем объявить глобальные переменные или функции, чтобы каждый раз их не импортировать
-              path.resolve(__dirname, 'src/Common/Styles/variables.styl'),
-            ],
+            stylusOptions: {
+              import: [ // Тут для Stylus'а можем объявить глобальные переменные или функции, чтобы каждый раз их не импортировать
+                path.resolve(__dirname, 'src/Common/Styles/variables.styl'),
+              ],
+            }
           }
         },
       ],
@@ -43,9 +45,11 @@ module.exports = (env) => {
         {
           loader: "stylus-loader",
           options: {
-            import: [
-              path.resolve(__dirname, './src/Common/Styles/variables.styl'),
-            ],
+            stylusOptions: {
+              import: [
+                path.resolve(__dirname, './src/Common/Styles/variables.styl'),
+              ],
+            }
           }
         },
       ],
